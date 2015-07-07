@@ -1,0 +1,2 @@
+dueBefore:"7 days from now" AND NOT (list:Schoolwork AND startAfter:now)
+
