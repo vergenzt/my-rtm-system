@@ -1,2 +1,0 @@
-listContains:Tasks AND (startAfter:now OR tag:+tickler)
-

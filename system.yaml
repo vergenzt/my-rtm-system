@@ -1,0 +1,16 @@
+---
+- list: Personal+
+- list: Cleaning+
+- list: To Read
+- list: Finances
+- list: Now
+---
+- smart_list: Review?
+  filter: list:Inbox
+- smart_list: Personal
+  filter: list:Inbox OR (list:Personal+ AND NOT startAfter:now AND (NOT priority:none))
+- smart_list: Personal~
+  filter: list:Personal+ AND NOT startAfter:now AND priority:none
+- smart_list: Cleaning
+  filter: list:Cleaning+ AND NOT startAfter:now
+
